@@ -79,3 +79,88 @@ A containerization tool that packages the application and its dependencies into 
 ### 🔄 CI/CD Pipelines
 Automated workflows for continuous integration and deployment. They ensure that new changes are tested, validated, and deployed efficiently without manual intervention.
 
+
+## 🗄️ Database Design
+
+The database is designed to efficiently manage users, properties, bookings, reviews, and payments. Relationships between these entities ensure data consistency and support the core functionalities of the Airbnb Clone Project.
+
+### 👤 Users
+**Key Fields:**
+- `id`: Unique identifier for each user.  
+- `name`: Full name of the user.  
+- `email`: User’s email address (used for authentication).  
+- `password`: Encrypted password for account security.  
+- `role`: Defines whether the user is a guest or a host.  
+
+**Relationships:**
+- A user can list multiple properties.  
+- A user can make multiple bookings.  
+- A user can post multiple reviews.
+
+---
+
+### 🏠 Properties
+**Key Fields:**
+- `id`: Unique identifier for each property.  
+- `title`: Name or title of the property listing.  
+- `description`: Detailed information about the property.  
+- `price_per_night`: Cost of staying per night.  
+- `location`: Geographic location or address.  
+
+**Relationships:**
+- A property belongs to one user (host).  
+- A property can have multiple bookings and reviews.
+
+---
+
+### 📅 Bookings
+**Key Fields:**
+- `id`: Unique identifier for each booking.  
+- `user_id`: References the user who made the booking.  
+- `property_id`: References the booked property.  
+- `check_in`: Start date of the booking.  
+- `check_out`: End date of the booking.  
+
+**Relationships:**
+- A booking belongs to one user and one property.  
+- Each booking can be linked to one payment.
+
+---
+
+### 💳 Payments
+**Key Fields:**
+- `id`: Unique identifier for each payment.  
+- `booking_id`: References the related booking.  
+- `amount`: Total payment amount.  
+- `payment_status`: Indicates success, pending, or failed transactions.  
+- `payment_date`: Timestamp of when the payment was made.  
+
+**Relationships:**
+- A payment is associated with a single booking.  
+- Each booking has one corresponding payment record.
+
+---
+
+### ⭐ Reviews
+**Key Fields:**
+- `id`: Unique identifier for each review.  
+- `user_id`: References the user who wrote the review.  
+- `property_id`: References the property being reviewed.  
+- `rating`: Numerical rating (e.g., 1–5 stars).  
+- `comment`: Text feedback from the user.  
+
+**Relationships:**
+- A review belongs to one user and one property.  
+- A property can have multiple reviews.
+
+---
+
+### 🔗 Entity Relationships Summary
+- **User → Property:** One-to-Many  
+- **User → Booking:** One-to-Many  
+- **Property → Booking:** One-to-Many  
+- **Property → Review:** One-to-Many  
+- **Booking → Payment:** One-to-One  
+- **User → Review:** One-to-Many
+
+
