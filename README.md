@@ -2,7 +2,7 @@
 
 > The Airbnb Clone Project aims to replicate the core functionality of the Airbnb platform by building a robust and scalable backend system that supports user management, property listings, bookings, payments, and reviews. The project is designed to provide a seamless experience for both guests and hosts, ensuring reliability, efficiency, and security in handling operations.
 
-## 🏆 Project Goals
+## *🏆 Project Goals*
 
 - User Management: Enable secure user registration, authentication, and profile handling.
 
@@ -16,7 +16,7 @@
 
 - Performance Optimization: Implement database indexing, caching, and asynchronous tasks to improve performance and scalability.
 
-## ⚙️ Tech Stack
+## *⚙️ Tech Stack*
 
 - Backend Framework: Django
 
@@ -32,55 +32,55 @@
 
 - CI/CD: Automated testing and deployment pipelines
 
-## 👥 Team Roles
+## *👥 Team Roles*
 
-### 🧩 Backend Developer
+###  Backend Developer
 Responsible for designing and implementing the server-side logic, API endpoints, and integrations. Ensures data flows smoothly between the database, frontend, and external services while maintaining security, scalability, and performance.
 
-### 🗄️ Database Administrator (DBA)
+### Database Administrator (DBA)
 Manages the design, optimization, and maintenance of the database. Ensures data integrity, applies indexing for faster queries, and oversees backup, recovery, and performance tuning.
 
-### ⚙️ DevOps Engineer
+### DevOps Engineer
 Handles deployment, continuous integration, and infrastructure management. Automates workflows, monitors system performance, and ensures scalability and reliability across environments.
 
-### 💻 Frontend Developer
+### Frontend Developer
 Builds the user-facing components of the application. Integrates APIs, designs responsive and intuitive interfaces, and ensures a smooth and engaging user experience for both guests and hosts.
 
-### 🧪 QA Engineer (Quality Assurance)
+### QA Engineer (Quality Assurance)
 Tests the application to detect and resolve bugs, usability issues, and performance bottlenecks. Validates that all features meet the required functionality and quality standards before release.
 
-### 📋 Project Manager
+### Project Manager
 Coordinates the team’s workflow, manages timelines, and aligns deliverables with project objectives. Facilitates communication between developers, stakeholders, and clients to ensure successful project delivery.
 
 
-## ⚙️ Technology Stack
+## *⚙️ Technology Stack*
 
-### 🐍 Django
+###  Django
 A high-level Python web framework used to build the backend of the application. It provides a powerful ORM, authentication system, and structure for developing scalable and secure web applications.
 
-### 🔗 Django REST Framework (DRF)
+###  Django REST Framework (DRF)
 An extension of Django that simplifies building RESTful APIs. It handles serialization, authentication, and CRUD operations, allowing smooth communication between the backend and frontend.
 
-### 🧩 GraphQL
+###  GraphQL
 A flexible query language that enables clients to request only the data they need. It improves API efficiency and provides a modern alternative to traditional REST endpoints.
 
-### 🐘 PostgreSQL
+###  PostgreSQL
 A powerful, open-source relational database used for storing and managing application data. It ensures data consistency, supports complex queries, and integrates seamlessly with Django’s ORM.
 
-### ⚡ Celery
+### Celery
 A task queue used for handling asynchronous processes such as sending notifications, processing payments, or performing background jobs, improving application performance and user experience.
 
-### 🧠 Redis
+### Redis
 An in-memory data store used for caching, session management, and queuing background tasks, ensuring faster response times and optimized database performance.
 
-### 🐳 Docker
+### Docker
 A containerization tool that packages the application and its dependencies into isolated containers, ensuring consistent environments across development, testing, and production.
 
-### 🔄 CI/CD Pipelines
+###  CI/CD Pipelines
 Automated workflows for continuous integration and deployment. They ensure that new changes are tested, validated, and deployed efficiently without manual intervention.
 
 
-## 🗄️ Database Design
+## *🗄️ Database Design*
 
 The database is designed to efficiently manage users, properties, bookings, reviews, and payments. Relationships between these entities ensure data consistency and support the core functionalities of the Airbnb Clone Project.
 
@@ -165,47 +165,47 @@ The database is designed to efficiently manage users, properties, bookings, revi
 
 
 
-## ✨ Feature Breakdown
+## *✨ Feature Breakdown*
 
-### 👤 User Management
+### User Management
 Handles user registration, authentication, and profile management. This feature ensures secure access control and allows both guests and hosts to manage their personal information, credentials, and roles within the platform.
 
-### 🏠 Property Management
+### Property Management
 Allows hosts to create, update, and manage property listings with essential details such as title, description, location, and price per night. This feature provides guests with accurate and up-to-date information when browsing available accommodations.
 
-### 📅 Booking System
+###  Booking System
 Enables users to book properties, view booking details, and manage reservations efficiently. It ensures that each booking maintains proper availability status while preventing overlapping reservations.
 
-### 💳 Payment Processing
+###  Payment Processing
 Integrates a secure payment gateway to handle transactions related to property bookings. It tracks payment history, verifies successful transactions, and enhances trust between hosts and guests.
 
-### ⭐ Review System
+###  Review System
 Allows users to post reviews and ratings for properties they have stayed in. This feature fosters transparency and credibility, helping other users make informed booking decisions.
 
-### ⚡ Data Optimization
+### Data Optimization
 Implements indexing, caching, and database optimization techniques to enhance performance. This ensures fast data retrieval, reduced server load, and an overall smoother user experience across the platform.
 
 
-## 🔒 API Security
+## *🔒 API Security*
 
 Security is a core component of the Airbnb Clone Project, ensuring that all user interactions, transactions, and data exchanges are protected from unauthorized access or manipulation. The backend implements multiple layers of security to safeguard sensitive information and maintain trust between users, hosts, and the platform.
 
-### 🔐 Authentication
+### Authentication
 User authentication is managed using secure token-based methods such as **JWT (JSON Web Tokens)**. This ensures that only verified users can access protected endpoints. Authentication prevents unauthorized access and safeguards personal user data such as emails, profiles, and booking details.
 
-### 🧩 Authorization
+###  Authorization
 Authorization ensures that users can only access or modify resources they own or have permission for. For example, hosts can edit their property listings while guests can only manage their own bookings. This principle of least privilege prevents data breaches and misuse.
 
-### 🚦 Rate Limiting
+### Rate Limiting
 Rate limiting is applied to API endpoints to prevent abuse, such as brute-force login attempts or excessive requests that could lead to denial-of-service attacks. It helps maintain system stability and fair usage for all users.
 
-### 🔑 Data Encryption
+###  Data Encryption
 Sensitive information, including passwords and payment details, is encrypted both in transit (via **HTTPS/SSL**) and at rest. Encryption ensures that even if data is intercepted, it remains unreadable to unauthorized parties.
 
-### 💳 Secure Payment Processing
+###  Secure Payment Processing
 All payment transactions are handled through secure, PCI-compliant gateways. This measure ensures the confidentiality and integrity of financial data while preventing fraud and unauthorized access to payment information.
 
-### 🧱 Input Validation & Sanitization
+### Input Validation & Sanitization
 All incoming data is validated and sanitized to prevent common security threats such as **SQL injection**, **cross-site scripting (XSS)**, and **command injection**. This ensures that the API only processes clean and expected data.
 
 ---
@@ -213,20 +213,19 @@ All incoming data is validated and sanitized to prevent common security threats 
 By implementing these measures, the Airbnb Clone Project maintains a strong security posture, protecting users, their data, and the platform’s integrity.
 
 ---
----
-## 🔁 CI/CD Pipeline
+## *🔁 CI/CD Pipeline*
 
-### ⚙️ Overview
+###  Overview
 The **Continuous Integration and Continuous Deployment (CI/CD) pipeline** automates the process of building, testing, and deploying the Airbnb Clone Project. It ensures that every code change is automatically validated, integrated, and deployed in a consistent and reliable manner. This approach enhances development efficiency, reduces human error, and accelerates feature delivery.
 
-### 🚀 Importance
+###  Importance
 CI/CD pipelines are crucial for maintaining code quality and ensuring smooth collaboration among team members. By automating testing and deployment, the project can:
 - Detect bugs early and prevent integration issues.
 - Maintain a stable and production-ready codebase.
 - Reduce downtime during updates and releases.
 - Deliver new features and improvements quickly and safely.
 
-### 🧰 Tools Used
+###  Tools Used
 - **GitHub Actions:** Automates workflows for building, testing, and deploying code directly from the repository.  
 - **Docker:** Provides containerized environments to ensure consistent application behavior across development, staging, and production.  
 - **Celery & Redis:** Used for background job processing during deployment tasks.  
