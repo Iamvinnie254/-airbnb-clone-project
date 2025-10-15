@@ -31,3 +31,23 @@
 - Containerization: Docker
 
 - CI/CD: Automated testing and deployment pipelines
+
+## 👥 Team Roles
+
+### 🧩 Backend Developer
+Responsible for designing and implementing the server-side logic, API endpoints, and integrations. Ensures data flows smoothly between the database, frontend, and external services while maintaining security, scalability, and performance.
+
+### 🗄️ Database Administrator (DBA)
+Manages the design, optimization, and maintenance of the database. Ensures data integrity, applies indexing for faster queries, and oversees backup, recovery, and performance tuning.
+
+### ⚙️ DevOps Engineer
+Handles deployment, continuous integration, and infrastructure management. Automates workflows, monitors system performance, and ensures scalability and reliability across environments.
+
+### 💻 Frontend Developer
+Builds the user-facing components of the application. Integrates APIs, designs responsive and intuitive interfaces, and ensures a smooth and engaging user experience for both guests and hosts.
+
+### 🧪 QA Engineer (Quality Assurance)
+Tests the application to detect and resolve bugs, usability issues, and performance bottlenecks. Validates that all features meet the required functionality and quality standards before release.
+
+### 📋 Project Manager
+Coordinates the team’s workflow, manages timelines, and aligns deliverables with project objectives. Facilitates communication between developers, stakeholders, and clients to ensure successful project delivery.
