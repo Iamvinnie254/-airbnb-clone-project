@@ -164,3 +164,25 @@ The database is designed to efficiently manage users, properties, bookings, revi
 - **User → Review:** One-to-Many
 
 
+
+## ✨ Feature Breakdown
+
+### 👤 User Management
+Handles user registration, authentication, and profile management. This feature ensures secure access control and allows both guests and hosts to manage their personal information, credentials, and roles within the platform.
+
+### 🏠 Property Management
+Allows hosts to create, update, and manage property listings with essential details such as title, description, location, and price per night. This feature provides guests with accurate and up-to-date information when browsing available accommodations.
+
+### 📅 Booking System
+Enables users to book properties, view booking details, and manage reservations efficiently. It ensures that each booking maintains proper availability status while preventing overlapping reservations.
+
+### 💳 Payment Processing
+Integrates a secure payment gateway to handle transactions related to property bookings. It tracks payment history, verifies successful transactions, and enhances trust between hosts and guests.
+
+### ⭐ Review System
+Allows users to post reviews and ratings for properties they have stayed in. This feature fosters transparency and credibility, helping other users make informed booking decisions.
+
+### ⚡ Data Optimization
+Implements indexing, caching, and database optimization techniques to enhance performance. This ensures fast data retrieval, reduced server load, and an overall smoother user experience across the platform.
+
+
