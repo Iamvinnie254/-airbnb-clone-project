@@ -186,3 +186,29 @@ Allows users to post reviews and ratings for properties they have stayed in. Thi
 Implements indexing, caching, and database optimization techniques to enhance performance. This ensures fast data retrieval, reduced server load, and an overall smoother user experience across the platform.
 
 
+## 🔒 API Security
+
+Security is a core component of the Airbnb Clone Project, ensuring that all user interactions, transactions, and data exchanges are protected from unauthorized access or manipulation. The backend implements multiple layers of security to safeguard sensitive information and maintain trust between users, hosts, and the platform.
+
+### 🔐 Authentication
+User authentication is managed using secure token-based methods such as **JWT (JSON Web Tokens)**. This ensures that only verified users can access protected endpoints. Authentication prevents unauthorized access and safeguards personal user data such as emails, profiles, and booking details.
+
+### 🧩 Authorization
+Authorization ensures that users can only access or modify resources they own or have permission for. For example, hosts can edit their property listings while guests can only manage their own bookings. This principle of least privilege prevents data breaches and misuse.
+
+### 🚦 Rate Limiting
+Rate limiting is applied to API endpoints to prevent abuse, such as brute-force login attempts or excessive requests that could lead to denial-of-service attacks. It helps maintain system stability and fair usage for all users.
+
+### 🔑 Data Encryption
+Sensitive information, including passwords and payment details, is encrypted both in transit (via **HTTPS/SSL**) and at rest. Encryption ensures that even if data is intercepted, it remains unreadable to unauthorized parties.
+
+### 💳 Secure Payment Processing
+All payment transactions are handled through secure, PCI-compliant gateways. This measure ensures the confidentiality and integrity of financial data while preventing fraud and unauthorized access to payment information.
+
+### 🧱 Input Validation & Sanitization
+All incoming data is validated and sanitized to prevent common security threats such as **SQL injection**, **cross-site scripting (XSS)**, and **command injection**. This ensures that the API only processes clean and expected data.
+
+---
+
+By implementing these measures, the Airbnb Clone Project maintains a strong security posture, protecting users, their data, and the platform’s integrity.
+
